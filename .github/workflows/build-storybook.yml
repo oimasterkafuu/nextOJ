@@ -8,6 +8,11 @@ on:
     branches:
       - main
 
+permissions:
+    contents: write
+    pages: write
+    id-token: write
+
 jobs:
   build:
     runs-on: macos-latest
@@ -46,9 +51,13 @@ jobs:
           npm run build
         env:
           CI: true
-      - name: Deploy with gh-pages
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npx gh-pages -d out -u "github-actions-bot <support+actions@github.com>" --no-history --cname "next.oimaster.top" --nojekyll -t true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
