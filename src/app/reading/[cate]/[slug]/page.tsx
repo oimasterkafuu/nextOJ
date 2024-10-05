@@ -73,18 +73,7 @@ export default async (props: {
       {CONFIG.wip && (
         <>
           <Divider className="mt-12" />
-          <p>本书还在编写中..</p>
-          <p>
-            前往{' '}
-            <a
-              href="https://innei.in/posts/technology/my-first-nextjs-book-here#comment"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://innei.in/posts/tech/my-first-nextjs-book-here#comment
-            </a>{' '}
-            发表你的观点吧。
-          </p>
+          <p>本书还在编写中……</p>
         </>
       )}
     </div>
