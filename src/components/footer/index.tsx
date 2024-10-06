@@ -28,11 +28,11 @@ export const PageFooter = () => {
         </div>
         <div>
           © 2024{' '}
-          <a href="https://innei.in" target="_blank" rel="noreferrer">
+          <a href="https://oimaster.top" target="_blank" rel="noreferrer">
             oimasterkafuu
           </a>
           <DividerVertical />
-          <MLink href="https://github.com/innei">GitHub</MLink>{' '}
+          <MLink href="https://github.com/oimasterkafuu">GitHub</MLink>{' '}
           <DividerVertical />
           <MotionButtonBase
             onClick={() => {
