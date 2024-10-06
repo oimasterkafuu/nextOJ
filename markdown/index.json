@@ -1,9 +1,6 @@
 [
   {
-    "paths": [
-      "hello.md",
-      "features.md"
-    ],
+    "paths": ["hello.md", "features.md"],
     "slug": "start",
     "title": "开始"
   }

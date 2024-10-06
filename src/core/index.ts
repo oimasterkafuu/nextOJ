@@ -72,7 +72,7 @@ export const buildSectionData = () => {
     for (const path of paths) {
       const nextPath = `./sections/${slug}/${Array.isArray(path) ? path[0] : path}`
 
-      const pageMeta = Array.isArray(path) ? path[1] ?? {} : ({} as PageMeta)
+      const pageMeta = Array.isArray(path) ? (path[1] ?? {}) : ({} as PageMeta)
 
       if (pageMeta.hide) continue
       const file = importMarkdownFile(nextPath)

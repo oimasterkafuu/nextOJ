@@ -11,7 +11,8 @@
     "dev": "next dev -p 9988",
     "build": "next build --no-lint",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "pnpm exec prettier --ignore-path ./.gitignore --write ."
   },
   "bump": {
     "before": [
