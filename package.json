@@ -1,7 +1,7 @@
 {
-  "name": "book-ssg-template",
+  "name": "oimoj-docs",
   "repository": {
-    "url": "https://github.com/Innei/book-ssg-template"
+    "url": "https://github.com/oimoj/nextOJ"
   },
   "version": "0.1.0",
   "private": true,

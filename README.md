@@ -1,51 +1,57 @@
-# Book SSG Template
+# NextOJ
 
-Yet another template for document SSG.
+下一代 BetaOJ，为您提供更强大、更灵活的在线评测体验。
 
-## Motivation
+## 注意
 
-I kind of want to write a booklet, but don't want to use an off-the-shelf SSG tool like vite , nextra or others. For one, it's too heavy to write and probably not for me, and secondly, using these tools would require me to make a lot of tweaks to the default styles. So I wrote an SSG tool from scratch. The good thing is that Next.js is really great at SSG.
+**NextOJ 目前仍处于开发阶段。**
 
-Uses Next.js App Router + Server Component to optimize the package size of the SSG generated product to a greater extent.
+## 优势
 
-In any case, it's still all about the writing. The focus of this template is ultimately on writing the content and the final UI rendering.
+NextOJ 作为一个新的 Online Judge 接替上一代 BetaOJ，它有以下优势：
 
-Online preview of this template:
+### 1. 自由开放的题库系统
 
-[Demo](https://book-template.innei.in)
+- 所有正常用户均可创建题目，经审查后将题目加入题库，丰富整个平台的题目资源。此外，题目权限管理更加细致，用户可指定题目管理员、可查看题目的班级和团队。
+- 题目支持 Markdown 格式，内置 KaTeX 公式渲染、代码高亮、多区域输入等高级功能，方便用户创建和管理复杂的题目描述与样例。此外，还支持 Word 和 PDF 格式导入题目、题目附件上传及数据下载，让题库管理更加灵活便捷。
+- 外部题库方面，NextOJ 直接集成了多个知名 OJ 平台的题目，包括 Codeforces、AtCoder、洛谷等。
 
-## Features
+### 2. 丰富的比赛功能
 
-- Markdown support with [Shiro Flavored Markdown](https://shiro.innei.in/#/markdown)
-- Page Open Graph and SEO support
-- Nice UI
-- Mobile responsive
+- NextOJ 允许所有正常用户自由创建比赛，提供详细的比赛管理权限。
+- 支持多种赛制类型，如 NOI、IOI、ACM、Codeforces 等。
+- 比赛支持一键导出题面、自动报名、补充报名和放弃报名系统，简化了比赛的组织和管理流程。
+- 比赛结束后，NextOJ 提供 Elo Rating 和学分系统来对参赛者进行评分和排名，并可通过 AI 辅助进行比赛分析。
 
-## Using this template
+### 3. 一站式作业管理
 
-```bash
-git clone https://github.com/Innei/book-ssg-template
-```
+- NextOJ 提供了比赛和作业无缝转换的功能，教师可以将比赛直接转为作业，并提供题目讲评课。
+- 班级同学将自动报名作业，平台会进行严格的监督管理，提供耻辱柱、学分系统等功能以促进学生按时完成作业。
 
-Alternatively, you can click Fork this project/use this template.
+### 4. 强大的用户管理系统
 
-## Configuration items
+- NextOJ 具有详细的用户管理功能，包括用户名和实名认证系统、学分和 Rating 记录、权限管理、刷题记录、技能分析等。
+- 开发者和管理员拥有至高的权限，并根据贡献度设有不同的管理角色，如题目管理员、比赛审核员和风纪委员，确保平台运作顺畅。
+- NextOJ 还提供 AI 分析用户技能和刷题量、学习薄弱点等，帮助用户全面提升。
 
-In `src/app.config.ts`, you can optionally change some of the configuration.
+### 5. 班级和团队管理
 
-| Variables | Types                                                                                   | Descriptions                                         |
-| --------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| `SEO`     | [`Metadata`](https://nextjs.org/docs/app/building-your-application/optimizing/metadata) | Configuration for SEO, provided by Next.js           |
-| `DONATE`  | `object`                                                                                | Sponsored Button content, links and images           |
-| `CONFIG`  | `object`                                                                                | Related Configurations                               |
-| `DONATE`  | `object`                                                                                | Sponsored Configuration, Links and Images for Button |
+- NextOJ 为教育场景提供班级和团队管理功能，老师可以指定班级成员和管理层。
+- 系统会记录班级的平均 Rating 并显示光荣榜和耻辱柱等内容，便于管理者跟踪班级的学习情况。
 
-## More..
+### 6. 高性能的评测系统
 
-For more details and usage, plz go to [Documentation](https://book-template.innei.in).
+- NextOJ 的评测系统采用分离式架构，支持多种数据类型和高级配置，评测任务通过 Socket.IO 进行自动分配。
+- 评测支持传统题目、交互题、提交答案题和函数补全题等类型，并内置 AI 自动配置 Subtask 和计分策略，让题目评测更加高效智能。
+- 此外，NextOJ 采用高精度的 Special Judge 和丰富的题目数据类型，以满足不同题目的需求。
 
-## License
+### 7. 互动讨论与反馈
 
-2024 © Innei, Released under the MIT License.
+- NextOJ 为用户提供了分类明确的讨论区和反馈系统，涵盖站务、学术交流、比赛公告和错误反馈等话题。
+- 平台会根据讨论内容提供 AI 评分和用户评分系统，确保讨论区的内容质量。
 
-> [Personal Website](https://innei.in/) · GitHub [@Innei](https://github.com/innei/)
+### 8. AI 在线客服与帮助系统
+
+- NextOJ 通过内置的 AI 客服和帮助文档，为用户提供详尽的操作指导，包括如何创建题目、比赛、团队和班级，以及管理员的工作笔记等高级功能说明，帮助用户快速上手平台功能。
+
+心动了？不要犹豫，点击 [这里](http://next.oimaster.top/) 进入文档！

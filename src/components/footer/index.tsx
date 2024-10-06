@@ -29,7 +29,7 @@ export const PageFooter = () => {
         <div>
           © 2024{' '}
           <a href="https://innei.in" target="_blank" rel="noreferrer">
-            Innei
+            oimasterkafuu
           </a>
           <DividerVertical />
           <MLink href="https://github.com/innei">GitHub</MLink>{' '}
